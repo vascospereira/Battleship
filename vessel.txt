@@ -1,0 +1,12 @@
+10 x 10
+P 5 Da V 12
+F 4 Bb V 13
+C 3 Fj V 10
+C 3 Ae H 10
+S 2 He H 6
+S 2 Jc H 6
+S 2 Ei V 6
+L 1 Fg H 9
+L 1 Bi V 9
+L 1 Dd V 9
+L 1 Gc H 9
