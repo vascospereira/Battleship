@@ -14,7 +14,7 @@ void Player::show_board() const
 	board.display();
 }
 
-Bomb Player::getBomb() const
+Bomb Player::get_bomb() const
 {
 	//srand(time(NULL));
 
@@ -32,8 +32,10 @@ Bomb Player::getBomb() const
 
 
 	// Create some defect bomb degree (60%)
-
 	int aim = rand() % 10;
+	// Make sure defect bomb aim to the 'sea'
+	if ((aim == 0 && row == 'A') || (aim == 1 && row == 'J') || (column == 'a' && aim == 2 ) || (column == 'j' && aim == 3))
+		aim = 5;
 
 	switch (aim) {
 	case NORTH:

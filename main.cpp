@@ -7,8 +7,8 @@ int main(){
 
 	setcolor(WHITE, BLACK);
 
-	Board b_1("C:\\Users\\Anonymous\\Desktop\\bship\\board.txt");
-	Board b_2("C:\\Users\\Anonymous\\Desktop\\bship\\vessel.txt");
+	Board b_1("C:\\Users\\Anonymous\\Desktop\\Battleship\\board.txt");
+	Board b_2("C:\\Users\\Anonymous\\Desktop\\Battleship\\vessel.txt");
 	const uint16_t number_of_ships = b_1.get_ships().size();
 	PositionChar pos;
 
@@ -25,7 +25,7 @@ int main(){
 			cout << "You Lost! Try again." << endl;
 			break;
 		}
-		Bomb bomb = player_1.getBomb();
+		Bomb bomb = player_1.get_bomb();
 		player_2.board_attacked(bomb);
 
 		// PLAYER 2
@@ -36,7 +36,7 @@ int main(){
 			cout << "You Lost! Try again." << endl;
 			break;
 		}
-		bomb = player_2.getBomb();
+		bomb = player_2.get_bomb();
 		player_1.board_attacked(bomb);
 
 	}
